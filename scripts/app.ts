@@ -264,6 +264,8 @@
             $("#login").html(`<a class="nav-link" data="login">
                                                     <i class="fas fa-sign-in-alt"></i> Login</a>`)
 
+            AddNavigationEvents();
+
             //redirect to login.html page
             LoadLink("login");
         });

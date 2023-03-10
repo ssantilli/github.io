@@ -165,6 +165,7 @@
             sessionStorage.clear();
             $("#login").html(`<a class="nav-link" data="login">
                                                     <i class="fas fa-sign-in-alt"></i> Login</a>`);
+            AddNavigationEvents();
             LoadLink("login");
         });
     }
