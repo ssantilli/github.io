@@ -452,7 +452,7 @@
      */
     function LoadHeader() : void
     {
-        $.get("/views/components/header.html",  function(html_data) {
+        $.get("./views/components/header.html",  function(html_data) {
             $("header").html(html_data);
             AddNavigationEvents();
             CheckLogin();
@@ -486,7 +486,7 @@
      *
      */
     function LoadFooter() : void{
-        $.get("/views/components/footer.html",  function(html_data) {
+        $.get("./views/components/footer.html",  function(html_data) {
             $("footer").html(html_data);
         });
     }
