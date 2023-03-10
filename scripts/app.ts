@@ -446,8 +446,6 @@
         });
     }
 
-
-
     /**
      * This function loads the header.html content into a page
      * @param html_data
@@ -471,8 +469,8 @@
      */
     function LoadContent() : void {
 
-        let page_name = router.ActiveLink;
-        let callback = ActiveLinkCallback();
+        let page_name : string  = router.ActiveLink;
+        let callback : Function = ActiveLinkCallback();
 
         $.get(`./views/content/${page_name}.html`, function(html_data) {
 
