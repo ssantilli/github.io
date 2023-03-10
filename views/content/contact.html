@@ -1,0 +1,51 @@
+<h1>Contact Us</h1>
+
+<!-- div#messageArea.alert.alert-danger{error message} -->
+<div id="messageArea" ></div>
+
+<div class="row justify-content-lg-center g-3">
+    <form class="col-lg-6 col-md-10 col-sm-10">
+
+        <!-- STEP 6 -->
+        <div class="input-group mb-3">
+            <span class="input-group-text">Full Name</span>
+            <input id="fullName"  name="fullName" type="text" class="form-control"
+                   aria-describedby="Full Name" aria-label="Full Name Input" required>
+        </div>
+
+        <!-- STEP 6 -->
+        <div class="input-group mb-3">
+            <span class="input-group-text">Contact Number</span>
+            <input id="contactNumber"  name="contactNumber" type="tel" class="form-control"
+                   aria-describedby="Contact Number" aria-label="Contact Number Input" required>
+        </div>
+
+        <!-- STEP 5 -->
+        <div class="input-group mb-3">
+            <span class="input-group-text">Email address</span>
+            <input id="emailAddress"  name="emailAddress" type="email" class="form-control"
+                   aria-describedby="Email Address Input" aria-label="Email Address" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">Your message</span>
+            <textarea id="message" name="message" class="form-control" aria-label="Message Area"></textarea>
+        </div>
+
+        <div class="mb-3 form-check">
+            <input  id="subscribeCheckbox" name="subscribeCheckbox"  type="checkbox" class="form-check-input">
+            <label class="form-check-label" for="subscribeCheckbox">Subscribe to our contact list </label>
+        </div>
+
+        <!-- STEP 10 -->
+        <button id="sendButton" type="submit" class="btn btn-primary"><i class="fas fa-envelope fa-lg"></i> Send</button>
+        <!-- STEP 11 -->
+        <button id="cancelButton" type="reset" class="btn btn-warning"><i class="fas fa-undo fa-lg"></i> Cancel</button>
+    </form>
+
+    <!-- STEP 12 -->
+    <div class="col-lg-4 col-md-4">
+        <a data="contact-list" class="btn btn-primary btn-sm link"><i class="fas fa-users fa-sm"> Show Contact List</i></a>
+    </div>
+
+</div>
